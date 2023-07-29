@@ -1,8 +1,10 @@
 import * as esbuild from 'esbuild'
 import { serverPlugin } from './serverPlugin'
+import { adminPlugin } from './adminPlugin'
 
 const plugins = {
   server: serverPlugin,
+  admin: adminPlugin
 }
 
 export const esbuildParser = async (entry: string, target: 'admin' | 'server') => {

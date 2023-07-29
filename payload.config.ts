@@ -9,6 +9,9 @@ export default buildConfig({
     getMediaCollection('media'),
     {
       slug: 'pages',
+      admin: {
+        useAsTitle: 'Pages Custom Column'
+      },
       access: {
         read: () => true
       },
